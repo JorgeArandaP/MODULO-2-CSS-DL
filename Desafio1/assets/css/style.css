@@ -1,0 +1,146 @@
+body {
+    margin:0;
+    font-family: Roboto, sans-serif;
+    
+}
+
+.contenedor-principal {
+    display: flex;
+    margin: 0;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    min-width: 300px;
+    
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f8f8f7;
+    border-left:rgb(204, 203, 203) solid 1px;
+    
+       
+}
+
+.flex-item{    
+    
+    margin: 1px;
+    max-width: 500px;
+    flex-basis: 1;
+    text-align: center;        
+}
+
+.item-1{
+    width: 250px;
+    height: auto;
+}
+
+.item-2{
+    margin-top: 20px;
+    font-size: 45px;   
+}
+
+.item-3{
+    line-height: 1.5;
+}
+
+
+.img-usuario{
+    width: 30px;
+    height: 30px;
+    border-radius: 100% ;
+    margin-right: 10px;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(204, 203, 203)  solid 1px;
+    width: 80%;
+    padding-inline: 10%;
+    min-height: 60px;
+    
+    
+}
+
+.datos-usuario{
+    display: flex;
+    align-items: center;
+
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.chat{
+    min-height: 110px;
+    border-bottom: solid 1px rgb(204, 203, 203);
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuevo-chat {
+    display:flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #a491d2; 
+    min-height: 40px; 
+    min-width: 60%;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    border: none;
+}
+
+.chat-actuales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    justify-content: center;
+    border-bottom: solid 1px rgb(204, 203, 203);
+    
+}
+
+.img-chat{
+    width: 45px;
+    height: 45px;
+    border-radius: 100% ;
+    margin-right: 10px;
+}
+
+.datos-usuario-chat{
+    display: flex;
+    align-items: center;  
+    border-bottom: solid 1px rgb(204, 203, 203);
+    width: 80%; 
+    padding-left: 10px;
+    padding-inline: 10%;
+    min-height: 65px;
+    
+}
+
+.Nombre {
+    font-size: 16px;
+    margin:0;
+}
+
+.mensaje {
+    font-size: 14px;
+    margin:0;
+    color: #444749;
+}
