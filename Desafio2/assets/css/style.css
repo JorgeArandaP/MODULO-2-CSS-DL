@@ -1,0 +1,41 @@
+.header {
+    grid-area: header;
+    background-color: blue;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-lateral {
+    grid-area: menu-lateral;
+    background-color: black;
+    height: 90vh;
+}
+
+.galeria-productos {
+    grid-area: productos;
+    background-color: gray;
+    height: 90vh;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: green;
+    height: 5vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "menu-lateral productos"
+        "footer footer" ;
+    
+    grid-template-columns: 1fr 6fr;
+    color: aliceblue;
+}
+
+body {
+    margin: 0;
+}
