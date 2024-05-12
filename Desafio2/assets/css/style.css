@@ -1,22 +1,35 @@
-.header {
+.navbar {
     grid-area: header;
-    background-color: blue;
+    background-color: rgb(62, 76, 117);
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: large;
 }
 
 .menu-lateral {
     grid-area: menu-lateral;
-    background-color: black;
+    /* background-color: rgb(224, 222, 222); */
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+
 }
 
 .galeria-productos {
     grid-area: productos;
-    background-color: gray;
+    /* background-color: rgb(34, 43, 59); */
     height: 90vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;   
+    align-items: center;   
+    column-gap: 20px;
+    
 }
 
 .footer {
@@ -33,9 +46,76 @@
         "footer footer" ;
     
     grid-template-columns: 1fr 6fr;
-    color: aliceblue;
+    color: black;
 }
 
 body {
     margin: 0;
+    background-color: rgb(197, 197, 197);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.categorias {
+    display: flex;
+    height: 20px;
+
+}
+
+.categorias p {
+    margin-right: 5px;
+}
+
+.menu-lateral > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.menu-lateral div {
+    margin:0;
+    margin-bottom: 10px;
+    font-size:15px;
+    
+}
+
+
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    
+    width: 370px;
+    height: 40vh;
+    margin-top: 10px;  
+    color: black;
+
+}
+
+.producto img {
+    height: 150px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.producto > h4, .producto > p {
+    margin: 4px;
+}
+
+.producto > button {
+    width: 370px;
+    height: 30px;
+    background-color: rgb(62, 76, 117);
+    border: none;
+    color: aliceblue;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
 }

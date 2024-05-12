@@ -3,15 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TuBike</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..
+    1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=
+    Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="grid-container">
-        <header class="header">Header</header>
-        <section class="menu-lateral">Menu Lateral</section>
-        <sectiion class="galeria-productos">Productos</sectiion>
-        <footer class="footer">Footer</footer>
+        <nav class="navbar">TuBike</nav>
+        <section class="menu-lateral">
+            <p>Categorias</p>
+            <div class="categorias">
+                <p>Road bike</p>
+                <p style="color: gray">(4)</p>
+            </div>
+            <div class="categorias">
+                <p>Mountain bike</p>
+                <p style="color: gray">(5)</p>
+            </div>
+            <div class="categorias">
+                <p>Hybrid bike</p>
+                <p style="color: gray">(3)</p>
+            </div>
+            <div class="categorias">
+                <p>Pack de accesorios</p>
+                <p style="color: gray">(1)</p>
+            </div>
+            
+        </section>
+        <sectiion class="galeria-productos">
+            <div class = "producto">
+                <img src="./assets/images/foto2.jpg" alt="Product1">
+                <h4>Road Bike</h4>
+                <p>$399.000</p>
+                <button type="button" class="boton-comprar">Comprar</button>
+            </div>
+            <div class = "producto">
+                <img src="./assets/images/foto1.jpg" alt="Product2">
+                <h4>Mountain Bike</h4>
+                <p>$499.000</p>
+                <button type="button" class="boton-comprar">Comprar</button>
+            </div>
+            <div class = "producto">
+                <img src="./assets/images/foto4.jpg" alt="Product3">
+                <h4>Hybrid Bike</h4>
+                <p>$199.000</p>
+                <button type="button" class="boton-comprar">Comprar</button>
+            </div>
+            <div class = "producto">
+                <img src="./assets/images/foto3.jpg" alt="Product4">
+                <h4>Pack de Accesorios</h4>
+                <p>$129.000</p>
+                <button type="button" class="boton-comprar">Comprar</button>
+            </div>
+        </sectiion>
+        <footer class="footer">@TuBike</footer>
     </div>
 </body>
 </html>
