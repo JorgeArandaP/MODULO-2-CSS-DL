@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(79, 179, 117);
+    /* height: 7vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+    color: white;
+    font-size: large;
+}
+
+
+.filtro {
+    grid-area: filtro;
+    background-color: rgb(238, 238, 238);
+    /* height: 12vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 11px;
+    color:rgb(90, 89, 89);
+}
+
+.menu-lateral {
+    grid-area: menu-lateral;
+    display: none;
+    
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: white;
+    display: grid;
+    /* height: 63vh; */
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: start;
+    overflow-y: auto;    
+}
+
+
+.numero-pagina {  
+    grid-area: pagina;
+    /* height: 5vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+    margin-inline: 35%; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(39, 87, 39);
+    /* height: 10vh; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'navbar'
+    'filtro'
+    'contenido'
+    'pagina'
+    'footer';   
+    grid-template-rows: 10vh 15vh 56vh 7vh 13vh; 
+}
+
+.logo-marca {
+    display: flex;
+    align-items: center;
+}
+
+.logo-marca p {
+    margin-left: 10px;
+}
+
+.filtrado {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    align-items: center;
+    border-radius: 4%;
+    color: gray;
+    width: 60%;
+    height: 4vh;
+    padding-inline: 10px;
+    margin-top: 10px;
+   
+}
+
+.card-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(172, 172, 172);
+    margin: 15px;
+    padding: 20px;
+}
+
+.card-producto img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card-producto button {
+    margin-top: 10px;
+    background-color: rgb(79, 179, 117) ;
+    border: none;
+    border-radius: 5%;
+    height: 30px;
+    width: 70px;
+    color: white;
+}
+
+
+
+.numero-pagina p {
+    padding: 10px;
+    text-align: center;
+    /* border-left: solid 1px black; */
+    font-size: normal;
+}
+
+.numero-pagina i{
+    padding: 7px;    
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'menu-lateral filtro'
+        'menu-lateral contenido'
+        'footer contenido'
+        'footer pagina' ; 
+        grid-template-columns: 1fr 7fr; 
+        grid-template-rows: 13vh 67vh 10vh 10vh;  /* Definición de filas */
+        height: 100vh; 
+    }
+
+    .navbar {
+
+        display: none;
+    }
+
+    .menu-lateral {
+        /* height: 70vh; */
+        background-color: rgb(79, 179, 117);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        color: white;
+        
+    }
+
+    .contenido {
+        /* height: 65vh; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 10px;
+    }
+
+    
+
+    .footer {
+        /* height: 30vh; */
+        text-align: center;
+    }
+
+    .footer p {
+        margin-top: 10px;
+    }
+
+    .marca {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .menu p {
+        margin-bottom: 10px;
+    }
+
+
+}
